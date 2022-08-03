@@ -1,0 +1,65 @@
+extends:
+  - eslint:recommended
+  - plugin:vue/vue3-recommended
+plugins:
+  - import
+  - vue
+rules:
+  array-bracket-spacing:
+    - error
+    - never
+  comma-dangle:
+    - error
+    - arrays: always-multiline
+      objects: always-multiline
+      imports: always-multiline
+      exports: always-multiline
+  eol-last:
+    - error
+    - always
+  indent:
+    - error
+    - 2
+    - SwitchCase: 1
+  import/extensions:
+    - error
+    - always
+  no-multi-spaces:
+    - error
+  object-curly-spacing:
+    - error
+    - always
+    - objectsInObjects: false
+  prefer-const:
+    - error
+  quotes:
+    - error
+    - double
+    - avoidEscape: true
+      allowTemplateLiterals: true
+  semi:
+    - error
+    - never
+  sort-imports:
+    - error
+    - ignoreCase: true
+  vue/component-name-in-template-casing:
+    - error
+    - PascalCase
+  vue/component-tags-order:
+    - error
+    - order: [template, script, style]
+  vue/v-on-event-hyphenation:
+    - off
+  vue/script-indent:
+    - error
+    - 2
+    - baseIndent: 1
+      switchCase: 1
+  vue/no-deprecated-functional-template:
+    - off
+
+overrides:
+  - files: ["*.vue"]
+    rules:
+      indent: off
