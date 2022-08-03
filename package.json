@@ -1,0 +1,8 @@
+{
+  "name": "eslint-config-marvioso",
+  "description": "Recommended eslint configuration",
+  "homepage": "https://github.com/marvi0so/eslint-config"
+  "devDependencies": {
+    "eslint": "^8.21"
+  }
+}
