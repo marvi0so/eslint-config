@@ -1,7 +1,8 @@
 name: Publish
 on:
-  release:
-    types: [created]
+  push:
+    tags:
+      - "*"
 jobs:
   npm:
     name: NPM
@@ -12,8 +13,6 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org
-      - run: npm ci
-      - run: npm run build
       - run: |
           VERSION=$(echo ${{ github.ref_name }} | cut -c 2-)
           npm version $VERSION --no-git-tag-version
