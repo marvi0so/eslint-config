@@ -3,10 +3,10 @@
   "description": "Recommended eslint configuration",
   "homepage": "https://github.com/marvi0so/eslint-config",
   "peerDependencies": {
-    "eslint": ">= 8"
+    "eslint": "^8"
   },
   "dependencies": {
-    "eslint-plugin-import": "^2.26",
-    "eslint-plugin-vue": "^9.2"
+    "eslint-plugin-import": "^2",
+    "eslint-plugin-vue": "^9"
   }
 }
