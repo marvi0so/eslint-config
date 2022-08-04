@@ -2,8 +2,10 @@
   "name": "eslint-config-marvioso",
   "description": "Recommended eslint configuration",
   "homepage": "https://github.com/marvi0so/eslint-config",
-  "devDependencies": {
-    "eslint": "^8.21",
+  "peerDependencies": {
+    "eslint": ">= 8"
+  },
+  "dependencies": {
     "eslint-plugin-import": "^2.26",
     "eslint-plugin-vue": "^9.2"
   }
